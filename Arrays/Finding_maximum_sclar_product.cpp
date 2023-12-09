@@ -36,7 +36,7 @@
 #include<iostream>
 using namespace std;
 
-int minimumScalarProduct(int arr[], int arr1[] , int size) {
+int maximumScalarProduct(int arr[], int arr1[] , int size) {
     // sorting arr in asce order
     for(int i = 0; i<size-1; i++){
         for(int j = 0; j<size-1; j++){
@@ -75,7 +75,7 @@ int main() {
     int arr[] = {1, 2, 6, 3, 7};
     int arr1[] = {10, 7, 45, 3, 7};
     int size = sizeof(arr) / sizeof(int);
-    int product = minimumScalarProduct(arr,arr1, size);
+    int product = maximumScalarProduct(arr,arr1, size);
     cout<<"The max sclar product: "<<product;
     return 0;
 }
